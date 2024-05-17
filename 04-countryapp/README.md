@@ -1,3 +1,6 @@
+# Deployed in
+https://adrin-angular-country-app.netlify.app
+
 # Countryapp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
