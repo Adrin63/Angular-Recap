@@ -3,22 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LayoutPageComponent } from './auth/pages/layout-page/layout-page.component';
-import { RegisterPageComponent } from './auth/pages/register-page/register-page.component';
-import { LoginPageComponent } from './auth/pages/login-page/login-page.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LayoutPageComponent,
-    RegisterPageComponent,
-    LoginPageComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
